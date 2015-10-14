@@ -30,7 +30,7 @@ int main(int argc, char **argv)
 	ros::NodeHandle n;
 	image_transport::ImageTransport it(n);
 	image_transport::Publisher publisher;
-	publisher=it.advertise("chatter", 1000);
+	publisher=it.advertise("chatter", 1);
 	ros::Rate loop_rate(10);
 	
 	while (ros::ok() && key!=27)
